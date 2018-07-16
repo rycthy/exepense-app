@@ -10,15 +10,11 @@ import './styles/styles.scss';
 import 'react-dates/lib/css/_datepicker.css';
 
 const store = configureStore();
-
-
 //Provider API usage. Pass prop "store" setting it equal to your apps redux store
 const jsx = (
   <Provider store={store}>
     <AppRouter />
   </Provider>
 );
-
-
 
 ReactDOM.render(jsx, document.getElementById('app'));
