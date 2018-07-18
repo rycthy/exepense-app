@@ -18,7 +18,7 @@ export const addExpense = (expense) => ({
   expense
 });
 
-// only works because of Thunk:
+// async function that only works because of Thunk:
 export const startAddExpense = (expenseData = {}) => {
   return (dispatch) => {
     const {
@@ -48,3 +48,26 @@ export const editExpense = (id, updates) => ({
   id,
   updates
 });
+
+export const setExpenses = (expenses) => ({
+  type: 'SET_EXPENSES',
+  expenses
+});
+
+// async
+export const startSetExpenses = () => {
+  return (dispatch) => {
+    return database.ref('expenses').once('value').then((snapshot) => {
+      const expenses = [];
+      snapshot.forEach((childSnapshot) => {
+        expenses.push({
+          id: childSnapshot.key,
+          ...childSnapshot.val()
+        });
+      });
+      dispatch(setExpenses(expenses));
+    }).catch((e) => {
+      console.log(`something went wrong, here's the:`, e);
+    });
+  };
+};

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'; // Provides the Store to all the componenets in our app
 import AppRouter from './routers/AppRouter';
-import { addExpense } from './actions/expenses';
+import { startSetExpenses } from './actions/expenses';
 import getVisibleExpenses from './selectors/expenses';
 import configureStore from './store/configureStore';
 import 'normalize.css/normalize.css';
@@ -18,4 +18,8 @@ const jsx = (
   </Provider>
 );
 
-ReactDOM.render(jsx, document.getElementById('app'));
+ReactDOM.render(<p>🏋️‍🏋️‍🏋️‍loading...🏋️‍🏋️‍🏋️‍</p>, document.getElementById('app'));
+
+store.dispatch(startSetExpenses()).then(() => {
+  ReactDOM.render(jsx, document.getElementById('app'));
+});
