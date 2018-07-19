@@ -10,7 +10,7 @@ export const ExpensesSummary = ({ visibleExpenses }) => {
 
   return (
     <div>
-      <h3>{`Viewing ${visibleExpenses.length} ${expenseWord} totaling ${formattedExpensesTotal}`}</h3>
+      <h3>{`You're looking at ${visibleExpenses.length} ${expenseWord} totaling ${formattedExpensesTotal}`}</h3>
     </div>
   );
 };

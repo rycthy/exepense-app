@@ -3,8 +3,11 @@
 exports[`should render Header correctly 1`] = `
 <header>
   <h1>
-    Expensify
+    Fix The Bank
   </h1>
+  <h3>
+    Keep track of your expenses
+  </h3>
   <NavLink
     activeClassName="is-active"
     ariaCurrent="true"
