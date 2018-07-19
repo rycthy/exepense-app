@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render LoginPage correctly 1`] = `
+<div>
+  <h1>
+    🤖 Login to me if you want to live 🤖
+  </h1>
+  <h3>
+    (Please log in to start managing your expenses)
+  </h3>
+  <button
+    onClick={[Function]}
+  >
+    Login
+  </button>
+</div>
+`;

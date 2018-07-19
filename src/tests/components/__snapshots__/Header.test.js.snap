@@ -12,9 +12,9 @@ exports[`should render Header correctly 1`] = `
     activeClassName="is-active"
     ariaCurrent="true"
     exact={true}
-    to="/"
+    to="/dashboard"
   >
-    Dashboard!
+    Dashboard
   </NavLink>
    |
   <NavLink
@@ -22,8 +22,13 @@ exports[`should render Header correctly 1`] = `
     ariaCurrent="true"
     to="/create"
   >
-    Add Expense Page!
+    Log New Expense
   </NavLink>
    |
+  <button
+    onClick={[Function]}
+  >
+    Logout
+  </button>
 </header>
 `;
