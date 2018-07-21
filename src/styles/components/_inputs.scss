@@ -1,0 +1,43 @@
+.text-input {
+  border-radius: 3px;
+  height: 50px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: $font-size-large;
+  font-weight: 300;
+  padding: $s-size;
+  transition: border-color .3s ease;
+  transition: box-shadow .3s ease;
+}
+.text-input:focus { 
+  outline: none;
+  border-color: $green;
+  box-shadow: 0 0 10px $green;
+}
+
+.select {
+  @extend .text-input;
+  transition: color .3s ease;
+}
+
+.select:hover {
+  outline: none;
+  border-color: $green;
+  box-shadow: 0 0 10px $green;
+  color: $green;
+}
+
+.textarea {
+  @extend .text-input;
+  height: 10rem
+}
+
+.DateRangePickerInput {
+  background-color: #fff;
+  border: none;
+  display: inline-block;
+  border-radius: 3px;
+}
+.SingleDatePickerInput {
+  border-radius: 3px;
+  font-size:1px;
+}

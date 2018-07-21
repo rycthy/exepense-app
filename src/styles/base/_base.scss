@@ -1,10 +1,17 @@
+* {
+  box-sizing: border-box
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
-  font-family: Futura, Helvetica, Arial, sans-serif;
+  background: $off-black;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
   font-size: $m-size;
+  line-height: 1.6;
 }
 
 button {

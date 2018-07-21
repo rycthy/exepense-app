@@ -15,17 +15,25 @@ export class EditExpensePage extends React.Component {
   render() {
     return (
       <div>
-        <ExpenseFrom
-        expense={this.props.expense}
-        onSubmit={this.onSubmit}
-        />
-      <button 
-        onClick={this.onClick}>
-        Delete Expense</button>
-    </div>
+        <div className="page-header">
+          <div className="content-container">
+            <h2 className="page-header__title">Edit {this.props.expense.description}</h2>
+          </div>
+        </div>
+        <div className="content-container">
+          <ExpenseFrom
+            expense={this.props.expense}
+            onSubmit={this.onSubmit}
+          />
+          <button 
+          className="button button--secondary"
+          onClick={this.onClick}>
+          Delete Expense</button>
+        </div>
+      </div>
     )
   }
-}
+} 
 
 const mapStateToProps = (state, props) => ({
   expense: state.expenses.find((expense) => expense.id === props.match.params.id)

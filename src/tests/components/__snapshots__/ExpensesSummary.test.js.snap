@@ -1,17 +1,65 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should return correct message for multiple expenses 1`] = `
-<div>
-  <h3>
-    You're looking at 3 expenses totaling $1,141.95
-  </h3>
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h2
+      className="page-header__title"
+    >
+      You're looking at 
+      3
+       
+      expenses
+       totaling 
+      $1,141.95
+    </h2>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button"
+        replace={false}
+        to="/create"
+      >
+        Log Expense
+      </Link>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`should return correct message for one expense 1`] = `
-<div>
-  <h3>
-    You're looking at 1 expense totaling $1.95
-  </h3>
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h2
+      className="page-header__title"
+    >
+      You're looking at 
+      1
+       
+      expense
+       totaling 
+      $1.95
+    </h2>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button"
+        replace={false}
+        to="/create"
+      >
+        Log Expense
+      </Link>
+    </div>
+  </div>
 </div>
 `;

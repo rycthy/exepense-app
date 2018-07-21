@@ -1,0 +1,44 @@
+.button {
+  background: white;
+  border-radius: 3px;
+  color: $off-black;
+  display: inline-block;
+  font-family: 'Orbitron', sans-serif;
+  font-size: $font-size-large;
+  font-weight: 300;
+  line-height: 1;
+  padding: $s-size;
+  text-decoration: none;
+  transition: box-shadow .3s ease;
+  transition: color .3s ease;
+}
+
+.button:hover {
+  outline: none;
+  border-color: $green;
+  box-shadow: 0 0 10px $green;
+}
+
+.button--link {
+  background: none;
+  color: white;
+  border: none;
+}
+
+.button--link:hover {
+  outline: none;
+  border-color: none;
+  box-shadow: none;
+  color: $green;
+}
+
+.button--secondary {
+  background: #888888;
+  border: none;
+}
+
+.button--secondary:hover {
+  outline: none;
+  box-shadow: 0 0 10px red;
+  color: red;
+}

@@ -1,0 +1,23 @@
+.header{
+  background: $off-black;
+  border-bottom: 1px solid $grey;
+}
+
+.header__content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: $s-size 0;
+}
+
+.header__title {
+  color: white;
+  text-decoration: none;
+  transition: color .3s ease;
+  &:hover {
+    color: $green;
+  }
+  h1 {
+    margin: 0;
+  }
+}
