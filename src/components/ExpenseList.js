@@ -23,6 +23,9 @@ export const ExpenseList = (props) => ( // exporting for test purposes only
         )
     }
     </div>
+    <div className="footer">
+    <img src="/images/favicon.png" />
+    </div>
   </div>
 );
 
