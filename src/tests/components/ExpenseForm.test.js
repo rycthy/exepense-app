@@ -61,12 +61,6 @@ test('should not set amount on input change if input is invalid', () => {
   expect(wrapper.state('amount')).toBe('');
 });
 
-// test('should call onSubmit prop for valid form submission', () => {
-//   const onSubmitSpy = jest.fn();
-//   onSubmitSpy('Andrew', 'Philly');
-//   expect(onSubmitSpy).toHaveBeenCalledWith('Andrew', 'Philly'); // not sure what the technical differences are between toHaveBeenCalledWith and toHaveBeenLastCalledWith
-// });
-
 test('should call onSubmit prop for valid form submission', () => {
   const onSubmitSpy = jest.fn();
   const wrapper = shallow(<ExpenseForm expense={expenses[0]} onSubmit={onSubmitSpy}/>);
@@ -86,7 +80,7 @@ test('should set new date on date change', () => {
   const now = moment();
   const wrapper = shallow(<ExpenseForm />);
   wrapper.find('SingleDatePicker').prop('onDateChange')(now);
-  expect(wrapper.state('createdAt')).toEqual(now); //checking if toBe and toEqual are interchangeable for this case
+  expect(wrapper.state('createdAt')).toEqual(now);
 });
 
 test('should set calendar focus on change', () => {

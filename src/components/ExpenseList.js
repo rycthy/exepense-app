@@ -1,9 +1,9 @@
 import React from 'react';
-import { connect } from 'react-redux'; // imported for all components that need to dispatch action or read from the redux store
+import { connect } from 'react-redux';
 import ExpenseListItem from './ExpenseListItem'
 import selectExpenses from '../selectors/expenses';
 
-export const ExpenseList = (props) => ( // exporting for test purposes only
+export const ExpenseList = (props) => (
   <div className="content-container">
     <div className="list-header">
       <div className="show-for-mobile">Expenses</div>
@@ -24,7 +24,7 @@ export const ExpenseList = (props) => ( // exporting for test purposes only
     }
     </div>
     <div className="footer">
-    <img src="/images/favicon.png" />
+    <h2>--$--</h2>
     </div>
   </div>
 );
@@ -35,4 +35,4 @@ const mapStateToProps = (state) => {
   };
 }
 
-export default connect(mapStateToProps)(ExpenseList); // connects mapStateToProps to ExpenseList, giving it access to the redux store (in the props)
+export default connect(mapStateToProps)(ExpenseList);

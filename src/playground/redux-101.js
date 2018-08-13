@@ -63,3 +63,18 @@ store.dispatch(decrementCount());
 store.dispatch(decrementCount({decrementBy: 10}));
 
 store.dispatch(setCount({count: 101}));
+
+// DOES THE SAME THING AS ABOVE, BUT IT IS LESS TESTABLE. READ ABOUT mapDispatchToProps // https://github.com/reduxjs/react-redux/blob/master/docs/api.md#connectmapstatetoprops-mapdispatchtoprops-mergeprops-options
+// const AddExpensePage = (props) => (
+//   <div>
+//     <h1>Add Expense:</h1>
+//     <ExpenseForm 
+//       onSubmit={(expense) => {
+//         props.dispatch(addExpense(expense));
+//         props.history.push('/');
+//       }}
+//     />
+//   </div>
+// );
+
+// export default connect()(AddExpensePage);

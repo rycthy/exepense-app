@@ -1,24 +1,11 @@
 import uuid from 'uuid';
 import database from '../firebase/firebase';
 
-// old process:
-  // component calls action generator
-  // action generator returns object
-  // component dispatches object
-  // redux store changes
-
-// current process:
-  // component calls action generator
-  // action genrator generates function
-  // component dispatches function (not possible without redux middleware: redux-thunk)
-  // function runs (has the ability to dispatch other actions and do whatever it wants e.g. write to firebase)
-
 export const addExpense = (expense) => ({
   type: 'ADD_EXPENSE',
   expense
 });
 
-// async function that only works because of Thunk:
 export const startAddExpense = (expenseData = {}) => {
   return (dispatch, getState) => {
     const uid = getState().auth.uid;
@@ -73,7 +60,6 @@ export const setExpenses = (expenses) => ({
   expenses
 });
 
-// async
 export const startSetExpenses = () => {
   return (dispatch, getState) => {
     const uid = getState().auth.uid;

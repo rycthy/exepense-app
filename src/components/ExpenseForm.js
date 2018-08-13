@@ -2,10 +2,6 @@ import React from 'react';
 import moment from 'moment';
 import { SingleDatePicker } from 'react-dates';
 
-// const now = moment();
-// console.log(now.format('MMM Do, YYYY'));
-
-//Goal: set local component state for these inputs, don't update the store until they submit them
 export default class ExpenseForm extends React.Component {
   constructor(props) {
     super(props);

@@ -3,7 +3,7 @@
   border-radius: 3px;
   color: $off-black;
   display: inline-block;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: $font-size-large;
   font-weight: 300;
   line-height: 1;
@@ -11,6 +11,7 @@
   text-decoration: none;
   transition: box-shadow .3s ease;
   transition: color .3s ease;
+  font-weight: bold;
 }
 
 .button:hover {

@@ -15,6 +15,7 @@
 .list-item {
   border: 1px solid $grey;
   border-top: none;
+  border-radius: 3px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -24,9 +25,10 @@
   transition: box-shadow .3s ease;
   transition: color .3s ease;
   &:hover {
-    color: $green;
+    // color: #99DCFF
     outline: none;
-    border-color: $green;
+    // border-color: #99DCFF;
+    // border-color: $green;
     box-shadow: 0 0 10px $green;
   }
   @media (min-width: $desktop-breakpoint) {
@@ -69,4 +71,6 @@
 .footer {
   display: flex;
   justify-content: center;
+  color: $green;
+  font-family: 'Orbitron', sans-serif;
 }

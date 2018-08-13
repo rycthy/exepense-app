@@ -1,5 +1,5 @@
 .header{
-  background: $off-black;
+  background: #1E1E1E;
   border-bottom: 1px solid $grey;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .header__title {
-  color: white;
+  color: inherit;
   text-decoration: none;
   transition: color .3s ease;
   &:hover {

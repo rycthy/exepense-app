@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux'; // Provides the Store to all the componenets in our app
+import { Provider } from 'react-redux';
 import AppRouter, { history } from './routers/AppRouter';
 import { startSetExpenses } from './actions/expenses';
 import {login, logout} from './actions/auth';
@@ -12,7 +12,7 @@ import { firebase } from './firebase/firebase';
 import LoadingPage from './components/LoadingPage';
 
 const store = configureStore();
-//Provider API usage. Pass prop "store" setting it equal to your apps redux store
+
 const jsx = (
   <Provider store={store}>
     <AppRouter />
